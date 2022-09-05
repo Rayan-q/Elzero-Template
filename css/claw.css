@@ -202,11 +202,21 @@ ul {
     left: -100%;
     transition: var(--main-transition);
 }
+.header .main-nav > li > a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff3b;
+    top: 0;
+    left: -100%;
+    transition: var(--main-transition);
+}
 .header .main-nav > li > a:hover {
-    background-color: #fafafa;
     color: var(--main-color);
 }
-.header .main-nav > li > a:hover::before {
+.header .main-nav > li > a:hover::before,
+.header .main-nav > li > a:hover::after {
     left: 0;
 }
 /* Start Styling Mega Menu Section */
